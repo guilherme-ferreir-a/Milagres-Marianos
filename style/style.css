@@ -26,10 +26,15 @@ header h1 {
     font-size: 3em;
 }
 
-
 nav {
+    display: flex;
     padding-top: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
+    align-content: center;
 }
 
 nav a {
@@ -38,13 +43,23 @@ nav a {
     color: black;
     text-decoration: none;
     font-variant: small-caps;
-    margin: auto 5vw;
-    padding: 10px 0px;
     transition-duration: .5s;
 }
+
 
 nav a:hover {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.286);
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.308);
 }
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: block;
+    }
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+}
+ 
