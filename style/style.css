@@ -10,7 +10,10 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte2);
 }
+
 
 header {
     display: block;
@@ -35,6 +38,8 @@ nav {
     align-items: center;
     text-align: center;
     align-content: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.34);
 }
 
 nav a {
@@ -51,6 +56,55 @@ nav a:hover {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.286);
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.308);
+}
+
+.main {
+    background-color: gainsboro;
+}
+
+main {
+    height: 1000px;
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: white;
+}
+
+.container {
+    padding: 0px 20px;
+}
+
+.container h1 {
+    text-align: center;
+    font-family: var(--fonte1);
+    font-size: 3em;
+    padding: 10px
+}
+
+.container p {
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 18px;
+}
+
+.inicio img {
+    height: 100%;
+    display: block;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+p {
+    line-height: 1.4em;
+    padding: 8px 0px;
+}
+
+#milagres {
+    margin: 20px;
+}
+
+.milagres {
+    
 }
 
 @media only screen and (max-width: 600px) {
